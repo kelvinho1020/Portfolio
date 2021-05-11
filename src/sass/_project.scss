@@ -39,6 +39,12 @@
 		position: relative;
 		height: 30rem;
 
+		
+		@media only screen and (max-width: 350px) {
+			transform: scale(.9);
+		}
+
+
 		&:hover .card_side_front {
 			transform: rotateY(180deg);
 		}

@@ -13,6 +13,7 @@ header {
 		-webkit-transition: all 0.2s linear;
 
 		img {
+			margin-top: .8rem;
 			margin-left: 2rem;
 			padding: 6px 0;
 			max-height: 6.4rem;
@@ -33,16 +34,21 @@ header {
 	h3 {
 		margin-top: 8rem;
 		font-weight: 700;
-		font-size: 5rem;
+		font-size: 7rem;
 
 		@media only screen and (max-width: $bp-small) {
+			font-size: 5rem;
 			margin-top: 10rem;
 		}
 	}
 
 	h5 {
 		margin-top: 3rem;
-		font-size: 3rem;
+		font-size: 5rem;
+		@media only screen and (max-width: $bp-small) {
+			font-size: 3rem;
+			margin-top: 10rem;
+		}
 	}
 
 	#arrow {
@@ -66,7 +72,8 @@ header {
 	width: 20rem;
 
 	img {
-		margin-left: 2rem;
+		margin-top: 2rem;
+		margin-left: 3rem;
 		padding: 6px 0;
 		max-height: 7rem;
 	}

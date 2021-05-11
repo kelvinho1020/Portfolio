@@ -19,4 +19,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	const parallaxElems = document.querySelectorAll(".parallax");
 	const parallaxInstances = M.Parallax.init(parallaxElems);
+
 });

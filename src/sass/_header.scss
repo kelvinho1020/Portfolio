@@ -21,7 +21,7 @@ header {
 
 		i {
 			transform: scale(1.5);
-			color: #636363;
+			color:  $color-secondary;
 		}
 	}
 
@@ -72,7 +72,7 @@ header {
 	}
 
 	.divider {
-		background-color: grey;
+		background-color: $color-primary;
 		margin: 1.5rem 2rem 1.5rem 2.5rem;
 	}
 }

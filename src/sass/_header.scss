@@ -1,0 +1,78 @@
+header {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+
+	nav {
+		position: relative;
+		z-index: 2;
+		height: 64px;
+		background-color: transparent;
+		box-shadow: none;
+		transition: all 0.2s linear;
+		-webkit-transition: all 0.2s linear;
+
+		img {
+			margin-left: 2rem;
+			padding: 6px 0;
+			max-height: 6.4rem;
+			float: left;
+		}
+
+		i {
+			transform: scale(1.5);
+			color: #636363;
+		}
+	}
+
+	h3,
+	h5 {
+		font-family: "Lato", sans-serif;
+	}
+
+	h3 {
+		margin-top: 8rem;
+		font-weight: 700;
+		font-size: 5rem;
+
+		@media only screen and (max-width: $bp-small) {
+			margin-top: 10rem;
+		}
+	}
+
+	h5 {
+		margin-top: 3rem;
+		font-size: 3rem;
+	}
+
+	#arrow {
+		position: absolute;
+		bottom: 3%;
+		left: 48.5%;
+		z-index: 100;
+		width: 40px;
+		height: 40px;
+		background-image: url("../img/icons/arrow-down-white.png");
+		background-size: cover;
+		background-position: center;
+
+		@media only screen and (max-width: $bp-small) {
+			left: 43%;
+		}
+	}
+}
+
+#side-nav {
+	width: 20rem;
+
+	img {
+		margin-left: 2rem;
+		padding: 6px 0;
+		max-height: 7rem;
+	}
+
+	.divider {
+		background-color: grey;
+		margin: 1.5rem 2rem 1.5rem 2.5rem;
+	}
+}

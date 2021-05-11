@@ -1,0 +1,88 @@
+#project {
+	.card_row {
+		margin-top: 7rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.card_col {
+		width: 40rem;
+
+		h5 {
+			font-size: 3rem;
+		}
+
+		p {
+			font-size: 1.5rem;
+		}
+
+		&:last-child {
+			margin-left: 8rem;
+
+			@media only screen and (max-width: 895px) {
+				margin-top: 2rem;
+				margin-left: 0rem;
+			}
+		}
+	}
+
+	.card_container {
+		perspective: 150rem;
+		-moz-perspective: 150rem;
+		position: relative;
+		height: 30rem;
+
+		&:hover .card_side_front {
+			transform: rotateY(180deg);
+		}
+
+		&:hover .card_side_back {
+			transform: rotateY(0deg);
+		}
+
+		.card_side {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 80%;
+			min-width: 40rem;
+			height: 30rem;
+			backface-visibility: hidden;
+
+			color: white;
+			font-size: 2rem;
+			transition: all 0.5s;
+			border-radius: 10px;
+
+			&_front {
+				background-color: #dddddd;
+				overflow: hidden;
+
+				.card_image {
+					width: 100%;
+				}
+
+				.card_content_container {
+					display: flex;
+					font-size: 1rem;
+					justify-content: flex-end;
+					margin-right: 2rem;
+				}
+
+				.card_content {
+					margin-left: 1rem;
+					transform: translateY(-15%);
+					border-radius: 10px;
+					padding: 0.5rem 1rem;
+					background-color: darkgray;
+				}
+			}
+
+			&_back {
+				background-color: blue;
+				transform: rotateY(-180deg);
+			}
+		}
+	}
+}

@@ -17,18 +17,40 @@
 
 		h5 {
 			font-size: 3rem;
+
+			@media only screen and (max-width: $bp-medium) {
+				margin-top: 2rem;
+			}	
 		}
 
 		p {
 			font-size: 1.7rem;
 		}
 
+		.btn:not(.btn-mobile){
+			@media only screen and (max-width: $bp-medium) {
+				display: none;
+			}	
+		}
+
+		.btn-mobile {
+			margin-top: 1rem;
+			display: none;
+
+			&:nth-child(2) {
+				margin-right: 1rem;
+			}
+
+			@media only screen and (max-width: $bp-medium) {
+				display: inline-block;
+			}
+		}
+
 		&:last-child {
 			margin-left: 8rem;
 
-			@media only screen and (max-width: 895px) {
-				margin-top: 2rem;
-				margin-left: 0rem;
+			@media only screen and (max-width: $bp-small) {
+				margin-left: 1rem;
 			}
 		}
 	}
@@ -39,11 +61,9 @@
 		position: relative;
 		height: 30rem;
 
-		
 		@media only screen and (max-width: 350px) {
-			transform: scale(.9);
+			transform: scale(0.9);
 		}
-
 
 		&:hover .card_side_front {
 			transform: rotateY(180deg);

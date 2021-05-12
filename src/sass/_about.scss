@@ -8,7 +8,7 @@
 		}
 
 		h4 {
-            margin-top: 3rem;
+			margin-top: 3rem;
 
 			@media only screen and (max-width: $bp-medium) {
 				margin-top: 5rem;
@@ -19,9 +19,9 @@
 			}
 		}
 
-        .container {
-            margin-top: 5rem;
-        }
+		.container {
+			margin-top: 5rem;
+		}
 
 		.indicators {
 			position: absolute;
@@ -52,7 +52,7 @@
 				max-width: 90px;
 			}
 
-            @media only screen and (max-width: $bp-medium) {
+			@media only screen and (max-width: $bp-medium) {
 				max-width: 70px;
 			}
 		}

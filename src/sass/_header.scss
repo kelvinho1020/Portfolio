@@ -12,8 +12,19 @@ header {
 		transition: all 0.2s linear;
 		-webkit-transition: all 0.2s linear;
 
+		.navBg {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: white;
+			opacity: 0;
+			transition: all 0.5s;
+		}
+
 		img {
-			margin-top: .8rem;
+			margin-top: 0.5rem;
 			margin-left: 2rem;
 			padding: 6px 0;
 			max-height: 6.4rem;
@@ -22,7 +33,7 @@ header {
 
 		i {
 			transform: scale(1.5);
-			color:  $color-secondary;
+			color: $color-secondary;
 		}
 	}
 
@@ -82,4 +93,8 @@ header {
 		background-color: $color-primary;
 		margin: 1.5rem 2rem 1.5rem 2.5rem;
 	}
+}
+
+.clear {
+	opacity: 0.1;
 }

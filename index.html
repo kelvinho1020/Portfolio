@@ -27,14 +27,14 @@
 			<div class="slider fullscreen">
 				<ul class="slides">
 					<li>
-						<img src="./src/img/cover/banner.png" alt="Background image of Mike" />
+						<img src="./src/img/cover/banner.png" alt="Banner1" />
 						<div class="caption left-align grey-text text-lighten-5">
 							<h3>Looking For<br />Web Developer?</h3>
 							<h5>Check out my portfolio</h5>
 						</div>
 					</li>
 					<li>
-						<img src="./src/img/cover/banner2.png" alt="Background image of Mike" />
+						<img src="./src/img/cover/banner2.png" alt="Banner2" />
 						<div class="caption center-align grey-text text-lighten-4">
 							<h3>Love Adventure</h3>
 							<h5>Embrace Challenges</h5>
@@ -45,6 +45,7 @@
 
 			<!--Navbar-->
 			<nav>
+				<div class="navBg"></div>
 				<div class="container">
 					<a href="index.html" class="brand-logo">
 						<img src="./src/img/logo/logo.png" alt="Mike's logo" class="responsive-img" />
@@ -54,13 +55,13 @@
 					</a>
 				</div>
 			</nav>
-			<a href="#about" id="arrow" class="animated bounce infinite slow"></a>
+			<a href='#about' id="arrow" class="animated bounce infinite slow"></a>
 		</header>
 
 		<!--Side Nav-->
 		<ul class="sidenav grey lighten-2" id="side-nav">
 			<li id="side-nav-logo">
-				<img src="./src/img/logo/logo.png" alt="Mike's logo" />
+				<img src="./src/img/logo/logo.png" alt="logo" />
 			</li>
 			<li><a class="sidenav-close grey-text text-darken-3 waves-effect" href="#home">Home</a></li>
 			<li><a class="sidenav-close grey-text text-darken-3 waves-effect" href="#about">About</a></li>
@@ -81,13 +82,13 @@
 					<div class="carousel-item grey-text text-darken-2 " href="#frontEnd!" id="front-end-carousel-item">
 						<div class="container">
 							<div class="row">
-								<div class="carousel-logo col l2 tooltip">
-									<img src="./src/img/skills/Vue.png" alt="Vue.js Logo" class="responsive-img">
-									<span class="tooltip-text">Vue.js</span>
-								</div>
 								<div class="carousel-logo col l2  tooltip">
 									<img src="./src/img/skills/JavaScript.png" alt="JavaScript Logo" class="responsive-img">
 									<span class="tooltip-text">JavaScript</span>
+								</div>
+								<div class="carousel-logo col l2 tooltip">
+									<img src="./src/img/skills/Vue.png" alt="Vue.js Logo" class="responsive-img">
+									<span class="tooltip-text">Vue.js</span>
 								</div>
 								<div class="carousel-logo col l2  tooltip">
 									<img src="./src/img/skills/Sass.png" alt="Sass Logo" class="responsive-img">
@@ -115,12 +116,12 @@
 									<span class="tooltip-text">Git</span>
 								</div>
 								<div class="carousel-logo col l2 tooltip">
-									<img src="./src/img/skills/Heroku.png" alt="Heroku Logo" class="responsive-img">
-									<span class="tooltip-text">Heroku</span>
+									<img src="./src/img/skills/parcel.png" alt="Parcel Logo" class="responsive-img">
+									<span class="tooltip-text">Parcel</span>
 								</div>
 								<div class="carousel-logo col l2 tooltip">
-									<img src="./src/img/skills/Chrome.png" alt="Chrome Logo" class="responsive-img">
-									<span class="tooltip-text">Chrome Extension</span>
+									<img src="./src/img/skills/firebase.png" alt="Firebase Logo" class="responsive-img">
+									<span class="tooltip-text">Firebase</span>
 								</div>
 							</div>
 						</div>
@@ -133,7 +134,7 @@
 		<!--Parallax-->
 		<div class="parallax-container">
 				<div class="parallax">
-					<img src="./src/img/parallax/parallax2.jpg" alt="City view of San Francisco">
+					<img class='lazy' data-src='./src/img/parallax/parallax2.png' src="./src/img/parallax/parallax2-lazy.jpg" alt="Parallax2">
 				</div>	
 		</div>
 
@@ -144,7 +145,7 @@
 					<div class="card_col">
 						<div class="card_container">
 							<div class="card_side card_side_front">
-								<img class='card_image' src="./src/img/projects/chrome-extension-cover.jpeg" alt="">
+								<img class='card_image lazy' data-src='./src/img/projects/fireChat.png' src="./src/img/projects/fireChat-lazy.jpg" alt="firechat">
 								<div class="card_content_container">
 									<div class="card_content">Vue</div>
 									<div class="card_content">Vuex</div>
@@ -154,23 +155,23 @@
 							</div>
 							<div class="card_side card_side_back waves-effect waves-block waves-light">
 								<div class="button_container">
-									<button class="btn grey"><i class="material-icons">cast</i>Demo</button>
-									<button class="btn grey"><i
-										class="fab fa-github fa-2x"></i>Github</button>
+									<a target="_blank" href="https://hyperfirechat.netlify.app/chatroom" class="btn grey"><i class="material-icons">cast</i>Demo</a>
+									<a target="_blank" href="https://github.com/kelvinho1020/fire-chat" class="btn grey"><i
+										class="fab fa-github fa-2x"></i>Github</a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="card_col">
 						<h5 class="blue-grey-text text-darken-1">FireChat</h5>
-						<p class="blue-grey-text text-lighten-1"><br>Full Realtime Chat Application building by vue3 and using firebase as a backend. With online statuses, updatable user profile, icons telling you who read the message and functionality, </p>
+						<p class="blue-grey-text text-lighten-1"><br>Full Realtime Chat Application building by vue3 and using firebase as a backend. With online statuses, updatable user profile, icons telling you who wrote the message and functionality, </p>
 					</div>
 				</div>
 				<div class="card_row">
 					<div class="card_col">
 						<div class="card_container">
 							<div class="card_side card_side_front">
-								<img class='card_image' src="./src/img/projects/chrome-extension-cover.jpeg" alt="">
+								<img class='card_image lazy' data-src="./src/img/projects/pokedex.PNG" src="./src/img/projects/pokedex-lazy.jpg" alt="pokedex">
 								<div class="card_content_container">
 									<div class="card_content">Javascript</div>
 									<div class="card_content">Sass</div>
@@ -179,9 +180,9 @@
 							</div>
 							<div class="card_side card_side_back waves-effect waves-block waves-light">
 								<div class="button_container">
-									<button class="btn grey"><i class="material-icons">cast</i>Demo</button>
-									<button class="btn grey"><i
-										class="fab fa-github fa-2x"></i>Github</button>
+									<a target="_blank" href="https://hyper-pokedex.netlify.app" class="btn grey"><i class="material-icons">cast</i>Demo</a>
+									<a target="_blank" href="https://github.com/kelvinho1020/pokedex" class="btn grey"><i
+										class="fab fa-github fa-2x"></i>Github</a>
 								</div>
 							</div>
 						</div>
@@ -195,7 +196,7 @@
 					<div class="card_col">
 						<div class="card_container">
 							<div class="card_side card_side_front">
-								<img class='card_image' src="./src/img/projects/chrome-extension-cover.jpeg" alt="">
+								<img class='card_image lazy' data-src="./src/img/projects/pomodoro.png" src="./src/img/projects/pomodoro-lazy.jpg" alt="pomodoro">
 								<div class="card_content_container">
 									<div class="card_content">Javascript</div>
 									<div class="card_content">HTML</div>
@@ -204,9 +205,9 @@
 							</div>
 							<div class="card_side card_side_back waves-effect waves-block waves-light">
 								<div class="button_container">
-									<button class="btn grey"><i class="material-icons">cast</i>Demo</button>
-									<button class="btn grey"><i
-										class="fab fa-github fa-2x"></i>Github</button>
+									<a target="_blank" href="https://minipomodoro.netlify.app" class="btn grey"><i class="material-icons">cast</i>Demo</a>
+									<a target="_blank" href="https://github.com/kelvinho1020/Pomodoro"  class="btn grey"><i
+										class="fab fa-github fa-2x"></i>Github</a>
 								</div>
 							</div>
 						</div>
@@ -220,7 +221,7 @@
 					<div class="card_col">
 						<div class="card_container">
 							<div class="card_side card_side_front">
-								<img class='card_image' src="./src/img/projects/chrome-extension-cover.jpeg" alt="">
+								<img class='card_image lazy' data-src="./src/img/projects/PIP.png" src="./src/img/projects/PIP-lazy.jpg" alt="PIP">
 								<div class="card_content_container">
 									<div class="card_content">Javascript</div>
 									<div class="card_content">HTML</div>
@@ -229,16 +230,16 @@
 							</div>
 							<div class="card_side card_side_back waves-effect waves-block waves-light">
 								<div class="button_container">
-									<button class="btn grey"><i class="material-icons">cast</i>Demo</button>
-									<button class="btn grey"><i
-										class="fab fa-github fa-2x"></i>Github</button>
+									<a target="_blank" href="https://megapictureinpicture.netlify.app" class="btn grey"><i class="material-icons">cast</i>Demo</a>
+									<a target="_blank" href="https://github.com/kelvinho1020/Picture_in_Picture" class="btn grey"><i
+										class="fab fa-github fa-2x"></i>Github</a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="card_col">
-						<h5 class="blue-grey-text text-darken-1">Nextmeal</h5>
-						<p class="blue-grey-text text-lighten-1">An online platform, built by a group of 3, for users to readily access and order awesome food nearby at a reasonable price. Dashboards with data visualization are also developed for restaurant owners and admin.</p>
+						<h5 class="blue-grey-text text-darken-1">PIP</h5>
+						<p class="blue-grey-text text-lighten-1"><br>PIP is a application with combination of screen capture API and Picture-in-Picture API, which allows you to watch videos in a floating window, so you can keep an eye on what you're watching while interacting with other sites, or applications.</p>
 					</div>
 				</div>
 		</section>
@@ -246,7 +247,7 @@
 		<!--Parallax-->
 		<div class="parallax-container">
 			<div class="parallax">
-				<img src="./src/img/parallax/parallax1.jpg" alt="City view of San Francisco">
+				<img class='lazy' data-src='./src/img/parallax/parallax1.png' src="./src/img/parallax/parallax1-lazy.jpg" alt="parallax1">
 			</div>	
 		</div>
 
@@ -294,7 +295,9 @@
 		<footer class="page-footer grey lighten-2">
 			<div class="container">
 				  <div id="footer-logo">
-					<img src="./src/img/logo/logo.png" alt="Logo of Mike">
+					  <a href="#home">
+						  <img src="./src/img/logo/logo.png" alt="Logo">
+						</a>
 				  </div>
 				</div>
 			</div>

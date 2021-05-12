@@ -1,0 +1,12 @@
+.section-hidden {
+	opacity: 0;
+	transform: translateY(8rem);
+}
+
+.hidden {
+	display: none;
+}
+
+.lazy {
+	filter: blur(7px);
+}

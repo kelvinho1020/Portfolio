@@ -7,4 +7,16 @@
 			width: 20rem;
 		}
 	}
+
+	#footer-logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.footer-logo-github {
+			color: $color-secondary;
+			font-size: 2rem;
+			margin-bottom: 1.3rem
+		}
+	}
 }
